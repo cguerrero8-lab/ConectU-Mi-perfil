@@ -1,0 +1,15 @@
+{
+  "nombre": "Camilo Andres Guerrero Entralgo",
+  "descripcion": "Estudiante de Ingeniería de sistemas que ama la musica, la tecnologia y la naturaleza",
+  "musica": "Rock, metal ,pop, electronica",
+  "comida": "Pizza, lasaña, pastas, hamburguesa",
+  "pasatiempo": "Videojuegos, Musica, Dormir, Buscar el one piece",
+  "gustos": [
+    "Rock",
+    "Programación",
+    "Cine",
+    "Viajar",
+    "Naturaleza",
+    "Mujeres"
+  ]
+}
