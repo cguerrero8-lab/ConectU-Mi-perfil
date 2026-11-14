@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Conecta U</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <strong class="marca">Conecta U</strong>
+    <a href="#mi-perfil">Mi perfil</a>
+    <a href="#conectar">Conectar compañero</a>
+    <a href="#resultados">Resultados</a>
+  </nav>
+
+  <header>
+    <h1>¿Qué tanto coinciden tus gustos?</h1>
+    <p>Muestra tu perfil y consulta el de un compañero con la URL de su perfil.json.</p>
+  </header>
+
+  <main>
+    <section class="tarjeta-base" id="mi-perfil">
+      <h2>Mi perfil</h2>
+      <p class="sub">Tu información personal como estudiante.</p>
+      <div id="resumen"><p class="msg">Cargando perfil.json…</p></div>
+
+      <details id="editor">
+        <summary>Editar mi perfil</summary>
+        <form id="form-perfil">
+          <label>Nombre <input id="nombre" required></label>
+          <label>Descripción personal <textarea id="descripcion" rows="3" required></textarea></label>
+          <label>Música <input id="musica"></label>
+          <label>Comida <input id="comida"></label>
+          <label>Pasatiempo <input id="pasatiempo"></label>
+          <label>Gustos o intereses (mínimo 5, separados por coma)
+            <input id="gustos" placeholder="rock, fútbol, programación, cine, viajar" required>
+          </label>
+          <p id="msg-perfil" class="msg" role="status"></p>
+          <div class="acciones">
+            <button type="submit">Guardar perfil</button>
+            <button type="button" id="descargar" class="sec">Descargar perfil.json</button>
+          </div>
+        </form>
+      </details>
+    </section>
+
+    <section class="tarjeta-base" id="conectar">
+      <h2>Conectar compañero</h2>
+      <p class="sub">Consulta el perfil de otro estudiante usando su URL.</p>
+      <form id="form-url">
+        <label for="url">URL del perfil.json (puedes pegar varias, separadas por espacio o salto de línea)</label>
+        <textarea id="url" rows="3" placeholder="https://compañero.github.io/conecta/perfil.json" required></textarea>
+        <button type="submit" id="btn-consultar">Consultar perfil</button>
+      </form>
+      <p id="estado" class="msg" role="status"></p>
+    </section>
+  </main>
+
+  <section id="resultados" class="resultados">
+    <div id="lista"></div>
+    <button id="limpiar" class="sec" hidden>Limpiar resultados</button>
+  </section>
+
+  <script src="app.js"></script>
+</body>
+</html>

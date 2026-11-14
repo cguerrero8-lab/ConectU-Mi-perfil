@@ -1,15 +1,8 @@
 {
-  "nombre": "Camilo Andres Guerrero Entralgo",
+  "nombre": "Tu Nombre",
   "descripcion": "Estudiante de Ingeniería de Sistemas que disfruta aprender cosas nuevas.",
-  "musica": "Rock, Electronica, pop",
-  "comida": "Pizza, lasaña, hamburguesa",
-  "pasatiempo": "Videojuegos",
-  "gustos": [
-    "Rock",
-    "Videojuegos",
-    "Programación",
-    "Cine",
-    "Viajar",
-    "Mujeres"
-  ]
+  "musica": "Rock",
+  "comida": "Pizza",
+  "pasatiempo": "Fútbol",
+  "gustos": ["Rock", "Fútbol", "Programación", "Cine", "Viajar"]
 }
